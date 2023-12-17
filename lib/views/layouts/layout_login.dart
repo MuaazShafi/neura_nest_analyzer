@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:neura_nest_analyzer/helpers/constants.dart';
+import 'package:neura_nest_analyzer/views/screens/layout_navigation.dart';
 import 'package:neura_nest_analyzer/widgets/button.dart';
 import 'package:neura_nest_analyzer/widgets/text.dart';
 import 'package:neura_nest_analyzer/widgets/text_field.dart';
@@ -49,6 +51,9 @@ class LayoutLogin extends StatelessWidget {
         ),
         NeuraButton(
           text: "Login",
+          onTap: (){
+            Get.to(LayoutNavigation());
+          },
         ),
         Obx(() {
           return CheckboxListTile(
@@ -69,10 +74,36 @@ class LayoutLogin extends StatelessWidget {
         TextAndStyle(
           text: "Other sign in options",
           size: 11.sp,
-        ),
+        ).paddingOnly(bottom: 15.sp),
         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-
+            SizedBox(),
+            Container(
+              decoration: BoxDecoration(
+                color: NeuraNestColors.textColor2,
+                shape: BoxShape.circle,
+                border: Border.all(color: NeuraNestColors.whiteColor),
+              ),
+              child: SvgPicture.asset("assets/images/Facebook.svg").paddingAll(10.sp),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: NeuraNestColors.textColor2,
+                shape: BoxShape.circle,
+                border: Border.all(color: NeuraNestColors.whiteColor),
+              ),
+              child: SvgPicture.asset("assets/images/Google.svg").paddingAll(10.sp),
+            ),
+            Container(
+              decoration: BoxDecoration(
+                color: NeuraNestColors.textColor2,
+                shape: BoxShape.circle,
+                border: Border.all(color: NeuraNestColors.whiteColor),
+              ),
+              child: SvgPicture.asset("assets/images/Apple.svg").paddingAll(10.sp),
+            ),
+            SizedBox(),
           ],
         )
       ],

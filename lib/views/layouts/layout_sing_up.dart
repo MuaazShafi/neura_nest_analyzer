@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:neura_nest_analyzer/helpers/constants.dart';
 import 'package:neura_nest_analyzer/widgets/button.dart';
 import 'package:neura_nest_analyzer/widgets/text.dart';
 import 'package:neura_nest_analyzer/widgets/text_field.dart';
@@ -53,8 +54,35 @@ class LayoutSignUp extends StatelessWidget {
         }).paddingSymmetric(vertical: 13.sp),
         NeuraButton(
           text: "Sign up",
-        ),
+          onTap: (){
 
+          },
+        ).paddingOnly(bottom: 15.sp),
+        RichText(
+          text: TextSpan(
+            text: "By signing up, you agree to our ",
+            style: TextStyle(
+              fontSize: 12.sp,
+            ),
+            children: [
+              TextSpan(
+                text: "Terms, Privacy",
+                style: TextStyle(
+                  color: NeuraNestColors.secondaryColor,
+                ),
+              ),
+              TextSpan(
+                text: " and",
+              ),
+              TextSpan(
+                text: " Cookies Policy.",
+                style: TextStyle(
+                  color: NeuraNestColors.secondaryColor,
+                ),
+              ),
+            ],
+          ),
+        )
       ],
     ).paddingSymmetric(horizontal: 20.sp);
   }

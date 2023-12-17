@@ -5,10 +5,11 @@ import 'package:sizer/sizer.dart';
 class NeuraButton extends StatelessWidget {
 
   String text;
+  VoidCallback? onTap;
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: onTap,
       style: ElevatedButton.styleFrom(
         padding: EdgeInsets.symmetric(horizontal: 35.w,vertical: 10.sp),
         backgroundColor: NeuraNestColors.secondaryColor,
@@ -26,5 +27,6 @@ class NeuraButton extends StatelessWidget {
 
   NeuraButton({
     required this.text,
+    this.onTap,
   });
 }

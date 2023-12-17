@@ -14,17 +14,6 @@ class OnBoardingController extends GetxController {
   void onPageChanged(int index) {
     currentIndex.value = index;
   }
-
-// void goToNextPage() {
-//   if (currentIndex.value == numPages - 1) {
-//     Get.off(ScreenLogin());
-//   } else {
-//     pageController.nextPage(
-//       duration: Duration(milliseconds: 100),
-//       curve: Curves.bounceIn,
-//     );
-//   }
-// }
 }
 
 class ScreenOnBoarding extends StatelessWidget {

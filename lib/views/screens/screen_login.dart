@@ -39,12 +39,13 @@ class ScreenLogin extends StatelessWidget {
               Expanded(
                 child: Container(
                   child: TabBarView(
+                    physics: BouncingScrollPhysics(),
                     children: [
                       LayoutLogin(),
                       LayoutSignUp()
                     ],
                   ),
-                ).paddingOnly(top: 6.h),
+                ).paddingOnly(top: 4.h),
               )
             ],
           ),

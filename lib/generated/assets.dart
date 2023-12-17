@@ -6,7 +6,21 @@ class Assets {
   static const String fontsPoppinsMedium = 'assets/fonts/Poppins-Medium.ttf';
   static const String fontsPoppinsRegular = 'assets/fonts/Poppins-Regular.ttf';
   static const String fontsPoppinsSemiBold = 'assets/fonts/Poppins-SemiBold.ttf';
+  static const String imagesApple = 'assets/images/Apple.svg';
   static const String imagesCardPic = 'assets/images/cardPic.png';
+  static const String imagesFacebook = 'assets/images/Facebook.svg';
+  static const String imagesGoogle = 'assets/images/Google.svg';
+  static const String imagesHome = 'assets/images/home.svg';
+  static const String imagesImg1 = 'assets/images/img1.png';
+  static const String imagesImg2 = 'assets/images/img2.png';
+  static const String imagesImg3 = 'assets/images/img3.png';
+  static const String imagesImg4 = 'assets/images/img4.png';
+  static const String imagesImg5 = 'assets/images/img5.png';
+  static const String imagesImg6 = 'assets/images/img6.png';
+  static const String imagesImg7 = 'assets/images/img7.png';
+  static const String imagesImg8 = 'assets/images/img8.png';
+  static const String imagesLibrary = 'assets/images/library.svg';
   static const String imagesLogo = 'assets/images/logo.png';
+  static const String imagesSearch = 'assets/images/search.svg';
 
 }
